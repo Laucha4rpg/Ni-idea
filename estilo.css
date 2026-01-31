@@ -1,62 +1,83 @@
-/* Este es el código que va en el link externo */
-.perfil-afa {
+/* Configuración Global y Contenedores */
+.perfil-superior {
+    margin-top: 60px;
     background-color: #080808;
     color: #00ffcc;
     font-family: monospace;
     border: 1px solid #00ffcc;
     padding: 20px;
     border-radius: 12px;
+    position: relative;
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
-    margin-top: 60px;
 }
 
-.avatar-frame {
+.ficha-detalles {
+    margin-top: 30px;
+    background-color: #080808;
+    color: #00ffcc;
+    font-family: monospace;
+    border: 1px solid #00ffcc;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* El Avatar */
+.mi-avatar {
     width: 90px;
     height: 90px;
-    margin: 0 auto 15px;
     border-radius: 50%;
-    border: 2px solid #ff0055;
-    background-image: url('https://r2.erweima.ai/i/p7yAitWvSre7_YtqXm_7Xw.png');
+    border: 2px solid #00ffcc;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 10px #ff0055;
+    background-image: url('https://r2.erweima.ai/i/p7yAitWvSre7_YtqXm_7Xw.png');
+    margin: 0 auto 15px auto; /* Centrado */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-.titulo-nombre {
+/* Tipografía y Textos */
+.nombre-usuario {
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 20px #ff0055;
-    margin-bottom: 5px;
 }
 
-.subtitulo {
+.subtitulo-afa {
     text-align: center;
     color: #ff0055;
     font-size: 0.8em;
     letter-spacing: 2px;
-    margin-bottom: 20px;
 }
 
-.stats-box {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid #333;
-    padding: 15px;
-    border-radius: 8px;
+.seccion-titulo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 8px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    border-left: 4px solid #ff0055;
+    text-transform: uppercase;
 }
 
-.stat-line {
+.linea-stat {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
     border-bottom: 1px dashed #222;
+    padding: 2px 0;
 }
 
-.rango-footer {
+.valor-stat {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-rango {
     text-align: center;
     margin-top: 20px;
     padding-top: 15px;
     border-top: 1px dashed #333;
-    color: #fff;
 }
